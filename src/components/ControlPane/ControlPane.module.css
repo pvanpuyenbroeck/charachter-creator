@@ -4,12 +4,14 @@
   padding-top: 18px;
   background-color: white;
   border-radius: 8px;
+
   /*
     HACK: Margin on an outer bound like this is
     a little gross, but we haven't seen the tools
     to deal with it yet!
   */
   margin-bottom: 32px;
+
 }
 
 .title {
@@ -23,4 +25,10 @@
   font-size: 0.875rem;
   font-weight: 400;
   color: hsl(0deg, 0%, 30%);
+}
+
+@media  screen and (max-width:600px) {
+  .controlPane{
+    margin: 0 32px 32px 0;
+  }
 }

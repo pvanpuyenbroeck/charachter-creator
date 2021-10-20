@@ -39,4 +39,28 @@
 
 .controlColumn {
   width: 50%;
+
+}
+
+@media  screen and (max-width:600px) {
+  .controlColumn{
+    position: fixed;
+    bottom: 30px;
+    display: flex;
+    width: 100%;
+    z-index: 10;
+    overflow: auto;
+    margin-left: -32px;
+  }
+
+  .characterEditor{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .characterWrapper{
+    position: inherit;
+    width: 100%;
+  }
+
 }
